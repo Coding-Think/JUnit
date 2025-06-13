@@ -1,0 +1,42 @@
+Junit test
+
+--> import junit.jar()                        // Import JUnit library (or use Maven/Gradle)
+
+--> choose the method (to be tested)          // Select the method you want to test
+
+--> Alt + Insert (in IDE, optional)           // Use shortcut to create a test class in IntelliJ
+// IntelliJ: Use Alt + Insert → "Test" to auto-generate a test class
+// Eclipse: No shortcut – you must create the test class manually
+
+
+--> test class (should be public,
+    no parameters, no return)                 // Test class and methods must follow rules
+
+--> depend on needs (JUnit4 / JUnit5)         // Choose the JUnit version based on your project
+
+--> choose test method                        // Write a method and mark it with @Test
+
+--> method (Assert.assertEquals)              // Use assertions to check results
+                                              // Format: assertEquals(expected, actual)
+
+Common JUnit Annotations (JUnit 4 & JUnit 5)
+
+         Annotation			                     When it runs			                    Use Case
+
+     @Before(JUnit 4)	                 Before each test method	        Setup/reset before each test
+     
+     @BeforeEach(JUnit 5)              Before each test method	        Setup/reset before each test
+       
+     @After(JUnit 4)	                  After each test method	           Cleanup after each test
+
+     @AfterEach(JUnit 5)	              After each test method	           Cleanup after each test 
+
+     @BeforeClass(JUnit 4)	             Once before all tests	  	    One-time setup (e.g., DB connection)
+
+     @BeforeAll (static) (JUnit 5)       Once before all tests	   	    One-time setup (e.g., DB connection)
+
+     @AfterClass(JUnit 4)	               Once after all tests	                One-time cleanup
+     
+     @AfterAll (static)(JUnit 5)         Once after all tests	                One-time cleanup
+
+
